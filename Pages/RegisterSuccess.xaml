@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<views:MvxContentPage x:TypeArguments="viewModels:RegisterSuccessViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:TwogapWallet.Core.ViewModels;assembly=TwogapWallet.Core"
+    x:Class="TwogapWallet.UI.Pages.RegisterSuccessPage" Title="Home">
+    <views:MvxContentPage.Content>
+        <StackLayout BackgroundColor="#FE8D3F">
+            <StackLayout HorizontalOptions="StartAndExpand">
+                <Image Margin="20,10" Source="logo.png"></Image>
+            </StackLayout>
+
+
+            <Label Margin="20,0" Text="Successful!" TextColor="White" FontSize="38"></Label>
+
+            <Label Margin="20,0" Text="The registration process is complete. " TextColor="White" FontSize="14"></Label>
+
+            <Label Margin="20,0" Text="Access your email to verify your account" TextColor="White" FontSize="14"></Label>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Image Source="message.png"></Image>
+            </StackLayout>
+
+
+        </StackLayout>
+    </views:MvxContentPage.Content>
+</views:MvxContentPage>

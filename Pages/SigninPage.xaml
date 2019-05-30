@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<views:MvxContentPage x:TypeArguments="viewModels:SigninViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:TwogapWallet.Core.ViewModels;assembly=TwogapWallet.Core"
+    x:Class="TwogapWallet.UI.Pages.SigninPage" Title="Home" BackgroundColor="#4D61FF">
+    <views:MvxContentPage.Content>
+        <StackLayout BackgroundColor="#4D61FF">
+            <StackLayout HorizontalOptions="Start">
+                <Image Source="logo.png" Margin="20,10"></Image>
+            </StackLayout>
+
+            <Label Text="Welcome Back" FontSize="32" TextColor="White" Margin="20,0"></Label>
+            <Label Text="Please sign in to continue!" FontSize="14" TextColor="LightGray" Margin="20,0"></Label>
+
+            <Entry Margin="20" PlaceholderColor="LightGray" Placeholder="Email"></Entry>
+
+            <Entry Margin="20" PlaceholderColor="LightGray" Placeholder="Password"></Entry>
+
+            <StackLayout HorizontalOptions="EndAndExpand">
+
+                <Button Margin="20,10" BackgroundColor="#4D61FF" TextColor="White" Text="Forgot Password?"></Button>
+
+                <ImageButton Source="btn_continue.png" ></ImageButton>
+                
+            </StackLayout>
+            
+        </StackLayout>
+        
+    </views:MvxContentPage.Content>
+</views:MvxContentPage>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<views:MvxContentPage x:TypeArguments="viewModels:SignupViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:TwogapWallet.Core.ViewModels;assembly=TwogapWallet.Core"
+    x:Class="TwogapWallet.UI.Pages.SignupPage" Title="Home" BackgroundColor="#4D61FF">
+    <views:MvxContentPage.Content>
+        <StackLayout Margin="20" VerticalOptions="CenterAndExpand">
+            <Image Source="logo.png" WidthRequest="100" HorizontalOptions="Start"></Image>
+            <Label Margin="0,5" Text="Sign Up" FontSize="32" TextColor="white"></Label>
+            <Label Margin="0" Text="Create a new account to access" FontSize="14" TextColor="LightGray"></Label>
+
+            <Entry Margin="0,5" PlaceholderColor="White" TextColor="White" Placeholder="Name" FontSize="20"></Entry>
+
+            <Entry Margin="0,5" PlaceholderColor="White" TextColor="White" Placeholder="Email" FontSize="20"></Entry>
+
+            <Entry Margin="0,5" PlaceholderColor="White" TextColor="White" Placeholder="Password" FontSize="20"></Entry>
+
+            <Entry Margin="0,5" PlaceholderColor="White" TextColor="White" Placeholder="Refferal ID" FontSize="20"></Entry>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                
+                <Label Text="Already have an account" TextColor="White" FontSize="14" HeightRequest="44" LineHeight="44" VerticalTextAlignment="Center"></Label>
+                <Button Text="Sign in" BackgroundColor="#4d61ff" TextColor="White"></Button>
+                
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="EndAndExpand">
+                <Button TextColor="White" Text="Sign Up" BackgroundColor="#FE8D3F" WidthRequest="101" HeightRequest="45"></Button>
+                <!--<ImageButton WidthRequest="101" HeightRequest="45" Source="btn_continue.png"></ImageButton>-->
+            </StackLayout>
+                            
+        </StackLayout>
+    </views:MvxContentPage.Content>
+</views:MvxContentPage>

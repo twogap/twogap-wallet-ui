@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<views:MvxContentPage x:TypeArguments="viewModels:SliderPictureViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:TwogapWallet.Core.ViewModels;assembly=TwogapWallet.Core"
+    x:Class="TwogapWallet.UI.Pages.SliderPicturePage" Title="Home">
+    <views:MvxContentPage.Content>
+        <StackLayout BackgroundColor="#4D61FF">
+            <StackLayout HorizontalOptions="EndAndExpand">
+                <Button BackgroundColor="#4D61FF" TextColor="White" Text="SKIP"></Button>
+            </StackLayout>
+           
+            <controls:CarouselViewControl HeightRequest="350" HorizontalOptions="FillAndExpand" Orientation="Horizontal" IndicatorsShape="Square" ShowIndicators="True">
+                <controls:CarouselViewControl.ItemsSource>
+                    <x:Array Type="{x:Type View}">
+                        <StackLayout>
+                            <Image Source="gallery.png"></Image>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Image Source="gallery.png"></Image>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Image Source="gallery.png"></Image>
+                        </StackLayout>
+
+                    </x:Array>
+                </controls:CarouselViewControl.ItemsSource>
+            </controls:CarouselViewControl>
+
+            <Label Text="Lorem ipsum dolor sit" FontSize="26" HorizontalTextAlignment="Center" TextColor="White"></Label>
+            <Label Text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna a" FontSize="16" HorizontalTextAlignment="Center" TextColor="White"></Label>
+
+        </StackLayout>
+    </views:MvxContentPage.Content>
+</views:MvxContentPage>

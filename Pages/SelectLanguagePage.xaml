@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views:MvxContentPage x:TypeArguments="viewModels:SelectLanguageViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:TwogapWallet.Core.ViewModels;assembly=TwogapWallet.Core"
+    x:Class="TwogapWallet.UI.Pages.SelectLanguagePage" Title="Home"
+                      BackgroundColor="#4D61FF">
+    <views:MvxContentPage.Content>
+        <StackLayout BackgroundColor="#4D61FF" VerticalOptions="CenterAndExpand">
+            <Label Text="Select Language" TextColor="White" HorizontalTextAlignment="Center" FontSize="20" Margin="0,0,0,10"></Label>
+            
+            <StackLayout Margin="40,0" Spacing="0">
+                <Grid BackgroundColor="#EFEFEF" Padding="0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="180"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="united-kingdom.png"></Image>
+                    <Label Grid.Column="1" Text="ENGLISH"></Label>
+                    <ImageButton Grid.Column="2" Source="Group 1306.png"></ImageButton>
+                </Grid>
+
+                <Grid BackgroundColor="#EFEFEF" Padding="0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="180"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="japan.png"></Image>
+                    <Label Grid.Column="1" Text="日本語"></Label>
+                    <ImageButton Grid.Column="2" Source="Ellipse 450.png"></ImageButton>
+                </Grid>
+
+                <Grid BackgroundColor="#EFEFEF" Padding="0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="180"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="china.png"></Image>
+                    <Label Grid.Column="1" Text="中国"></Label>
+                    <ImageButton Grid.Column="2" Source="Ellipse 450.png"></ImageButton>
+                </Grid>
+
+                <Grid BackgroundColor="#EFEFEF" Padding="0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="180"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="russia.png"></Image>
+                    <Label Grid.Column="1" Text="русский"></Label>
+                    <ImageButton Grid.Column="2" Source="Ellipse 450.png"></ImageButton>
+                </Grid>
+
+                <Grid BackgroundColor="#EFEFEF" Padding="0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="180"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="vietnam.png"></Image>
+                    <Label Grid.Column="1" Text="TIẾNG VIỆT"></Label>
+                    <ImageButton Grid.Column="2" Source="Ellipse 450.png"></ImageButton>
+                </Grid>
+
+                <Button BackgroundColor="#FE8D3F" Padding="0,0" Text=">" TextColor="white" FontSize="40"></Button>
+                
+            </StackLayout>
+        </StackLayout>
+    </views:MvxContentPage.Content>
+</views:MvxContentPage>

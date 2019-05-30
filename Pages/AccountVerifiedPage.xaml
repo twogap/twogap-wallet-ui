@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<views:MvxContentPage x:TypeArguments="AccountVerifiedViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:TwogapWallet.Core.ViewModels;assembly=TwogapWallet.Core"
+    x:Class="TwogapWallet.UI.Pages.AccountVerifiedPage" Title="Home">
+    <views:MvxContentPage.Content>
+        <StackLayout BackgroundColor="#0C617B">
+            <StackLayout HorizontalOptions="StartAndExpand">
+                <Image Margin="20,10" Source="logo.png"></Image>
+            </StackLayout>
+
+
+            <Label Margin="20,0" Text="Account Verified" TextColor="White" FontSize="38"></Label>
+
+            <Label Margin="20,0" Text="You can start logging in and using" TextColor="White" FontSize="14"></Label>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Image Source="checked.png"></Image>
+            </StackLayout>
+
+
+        </StackLayout>
+    </views:MvxContentPage.Content>
+</views:MvxContentPage>
